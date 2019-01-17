@@ -1,21 +1,22 @@
-// Type definitions for bootstrap-colorpicker 2.5.3
+// Type definitions for bootstrap-colorpicker 2.5
 // Project: https://github.com/farbelous/bootstrap-colorpicker/tree/v2.x
 // Definitions by: Aleksandar Manukov <https://github.com/aleksandar-manukov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
 /// <reference types="jquery" />
 
-type ColorFormat = false | 'hex' | 'rgb' | 'rgba'
+type ColorFormat = 'hex' | 'rgb' | 'rgba';
 
 type ColorPickerAlignOptions = 'right' | 'left';
 
-type ColorPickerEvents = 'create' | 
-    'showPicker' | 
-    'hidePicker' | 
-    'changeColor' | 
-    'disable' | 
+type ColorPickerEvents = 'create' |
+    'showPicker' |
+    'hidePicker' |
+    'changeColor' |
+    'disable' |
     'enable' |
-    'destroy'
+    'destroy';
 
 /**
  * You can set colorpicker options either as a plugin parameter or data-* attributes
@@ -135,12 +136,12 @@ interface Color {
     hexNumberSignPrefix: boolean;
     origFormat: string;
     predefinedColors: {};
-    value: { 
-        h: number; 
+    value: {
+        h: number;
         s: number;
         b: number;
         a: number;
-    }
+    };
 
     /**
      * Set a new color. The value is parsed and tries to do a quess on the format.
@@ -200,7 +201,7 @@ interface ColorPicker {
     picker: JQuery;
 }
 
-interface ColorPickerEventObject extends Event {
+interface ColorPickerEventObject extends JQueryEventObject {
     color: Color;
 }
 
@@ -209,7 +210,7 @@ interface JQuery {
      * Initializes an colorpicker.
      */
     colorpicker(): JQuery;
-    
+
     /**
      * Initializes an colorpicker.
      */
