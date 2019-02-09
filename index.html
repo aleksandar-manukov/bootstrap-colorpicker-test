@@ -39,82 +39,131 @@
 
 <body>
     <div class="container">
-        <div class="col-xs-12">
-            <input id="cp1" type="text" class="form-control" value="#5367ce" />
-        </div>
-        <div class="col-xs-12">
-            <div id="cp2" class="input-group colorpicker-component">
-                <input type="text" value="#00AABB" class="form-control" />
-                <span class="input-group-addon"><i></i></span>
-            </div>
-        </div>
         <div class="form-group">
-            <div class="col-xs-12">
-                <div id="cp3" class="input-group colorpicker-component">
-                    <input type="text" value="#00AABB" class="form-control" />
-                    <span class="input-group-addon"><i></i></span>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Bootstrap Colorpicker 2.5.3 Examples</h1>
+                    <h4 class="text-center">For more details check <a href="https://farbelous.io/bootstrap-colorpicker/v2/">official
+                            documentation</a></h4>
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <div class="col-xs-12">
-                <a href="#" class="btn btn-default" id="cp4">Change background color</a>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-12">
-                <input type="text" class="form-control" id="cp5" />
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-12">
-                <input type="text" class="form-control" id="cp6" />
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-12">
-                <div id="cp7" style="display: inline-block;"></div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-12">
-                <div id="cp8" data-format="alias" class="input-group colorpicker-component">
-                    <input type="text" value="primary" class="form-control" />
-                    <span class="input-group-addon"><i></i></span>
+            <div class="row">
+                <label class="col-xs-12">Simple input field</label>
+                <div class="col-xs-12">
+                    <input id="cp1" type="text" class="form-control" value="#5367ce" />
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <div class="col-xs-12">
-                <input id="cp9" type="text" class="form-control" value="pink" />
+            <div class="row">
+                <label class="col-xs-12">As a component</label>
+                <div class="col-xs-12">
+                    <div id="cp2" class="input-group colorpicker-component">
+                        <input type="text" value="#00AABB" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="form-group">
-            <div class="col-xs-12">
-                <div id="cp10" class="input-group colorpicker-component">
-                    <input disabled type="text" value="" class="form-control" />
-                    <span class="input-group-addon"><i></i></span>
+            <div class="row">
+                <label class="col-xs-12">With custom options</label>
+                <div class="col-xs-12">
+                    <div id="cp3" class="input-group colorpicker-component">
+                        <input type="text" value="#00AABB" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
                 </div>
-                <br>
-                <p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <label class="col-xs-12">Working with events</label>
+                <div class="col-xs-12">
+                    <a href="#" class="btn btn-default" id="cp4">Change background color</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <label class="col-xs-12">Transparent color support</label>
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" id="cp5" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <label class="col-xs-12">Horizontal mode</label>
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" id="cp6" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <label class="col-xs-12">Inline mode</label>
+                <div class="col-xs-12">
+                    <div id="cp7" style="display: inline-block;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <label class="col-xs-12">Aliased color palette</label>
+                <div class="col-xs-12">
+                    <div id="cp8" data-format="alias" class="input-group colorpicker-component">
+                        <input type="text" value="primary" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <label class="col-xs-12">Disabled / enabled status</label>
+                <div class="col-xs-12">
+                    <input id="cp9" type="text" class="form-control" value="pink" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <label class="col-xs-12">Inside a modal</label>
+                <div class="col-xs-12">
+                    <div id="cp10" class="input-group colorpicker-component">
+                        <input disabled type="text" value="" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12">
                     <a class="btn btn-sm btn-default enable-button" href="#">Enable</a>
                     <a class="btn btn-sm btn-default disable-button" href="#">Disable</a>
-                </p>
+                </div>
             </div>
         </div>
         <div class="form-group">
-            <div class="col-xs-12">
-                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-                    Show modal
-                </button>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div id="cp11" class="input-group colorpicker-component">
-                                    <input type="text" value="" class="form-control" />
-                                    <span class="input-group-addon"><i></i></span>
+            <div class="row">
+                <label class="col-xs-12"></label>
+                <div class="col-xs-12">
+                    <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+                        Show modal
+                    </button>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div id="cp11" class="input-group colorpicker-component">
+                                        <input type="text" value="" class="form-control" />
+                                        <span class="input-group-addon"><i></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
