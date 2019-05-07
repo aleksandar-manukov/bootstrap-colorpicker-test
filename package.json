@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^3.4.1",
     "bootstrap-colorpicker": "^2.5.3",
-    "jquery": "^3.3.1"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "@types/jquery": "^3.3.29"
